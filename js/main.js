@@ -3,3 +3,5 @@
 $(".burger-toggle").click(function () {
     $(".navigation").toggleClass("navigation-open");
 });
+
+// Testimonials Carousel 

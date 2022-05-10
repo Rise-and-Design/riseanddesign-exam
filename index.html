@@ -1,35 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/flickity.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
     <title>Rise & Design | Webløsninger til Køges erhvervsliv</title>
     <meta name="keywords" content="web design keyword keyword keyword keyword">
     <meta name="description" content="128 tegns beskrivelse">
 </head>
+
 <body>
-    <header>            
+    <header>
+        <a href="#"><img class="logo" src="./assets/icons/brand-logo.svg" alt=""></a>
         <button class="burger-toggle">
-                <div class="burger-bar"></div>
-                <div class="burger-bar"></div>
-                <div class="burger-bar"></div>
-            </button>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+        </button>
         <nav class="navigation">
             <img class="navigation-logo" src="./assets/icons/brand-logo.svg" alt="Rise & Design logo">
             <ul class="navigation-list">
-                <li class="navigation-item"><a class="navigation-link navigation-link--current" href="#">Forside<img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt=""></a></li>
-                <li class="navigation-item"><a class="navigation-link" href="#">Vi tilbyder<img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt=""></a></li>
-                <li class="navigation-item"><a class="navigation-link" href="#">Om os<img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt=""></a></li>
-                <li class="navigation-item"><a class="navigation-link" href="#">Bliv inspireret<img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt=""></a></li>
+                <li class="navigation-item"><a class="navigation-link navigation-link--current" href="#">Forside<img
+                            class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt=""></a></li>
+                <li class="navigation-item"><a class="navigation-link" href="test.html">test<img
+                            class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt=""></a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">Om os<img class="navigation-link-arrow"
+                            src="assets/icons/menu-arrow.svg" alt=""></a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">Bliv inspireret<img
+                            class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt=""></a></li>
             </ul>
-            <a class="primary-cta-btn" href="#">Kontakt</a>
-
+            <a class="primary-cta-btn navigation-cta-btn" href="#">Kontakt</a>
         </nav>
     </header>
+    <section class="hero-section">
+        <h1 class="hero-heading">Skal du have en hjemmeside som skaber resultater?</h1>
+        <div class="hero-cta-container">
+            <a href="" class="primary-cta-btn">Få et tilbud</a>
+            <a href="" class="secondary-cta-btn">Se løsninger</a>
+        </div>
+    </section>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="./assets/icons/work-brands/koege-kommune-logo.png" alt="" />
+            </div>
+            <div class="slide">
+                <img src="./assets/icons/work-brands/koeges-kaffebar-logo.png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="smaller-logo" src="./assets/icons/work-brands/eluminate-logo.png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="smaller-logo" src="./assets/icons/work-brands/grafisk-sign-logo.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <section class="intro-section">
+        <h2 class="primary-heading">
+            Digitale løsninger
+            <br>
+            <strong class="primmary-heading--alternate color-secondary">til din virksomhed</strong>
+        </h2>
+        <p class="main-text">
+            Vi er en lille virksomhed som tilbyder at designe hjemmesider og logoer for dig!
+            <br><br>
+            Med kvalitet, fidelity og personlighed sørger vi for, at levere en løsning, som passer lige netop din
+            virksomheds behov, stor som lille.
+            <br><br>
+            Hvad end det er webshop eller en informationsside, får du et produkt, som ikke ligner alle andres.
+        </p>
+        <video class="intro-video" src="" poster="./assets/images/index-intro-video-thumbnail.png"></video>
+    </section>
+    <section class="call-me-section">
+        <div class="call-me-container">
+            <div class="call-me-content">
+                <h2 class="primary-heading color-secondary">
+                    <strong class="primmary-heading--alternate color-primary">Lad os tage en snak</strong>
+                    <br>
+                    Bliv ringet op
+                </h2>
+                <form action="" class="call-me-form">
+                    <input type="text" class="call-me-input" placeholder="Navn">
+                    <input type="text" class="call-me-input" placeholder="Tlf">
+                    <a href="" class="primary-cta-btn call-me-form-btn">Ring mig op</a>
+                </form>
+            </div>
+            <div class="call-me-image"></div>
+        </div>
+        <h3 class="primary-heading">
+            En ny hjemmeside
+            <br>
+            <strong class="primmary-heading--alternate color-secondary">Styrker dit brand</strong>
+        </h3>
+        <p class="main-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique enim error ex, quos minus asperiores eius
+            saepe. Beatae, accusantium praesentium. Perferendis eveniet, ex corrupti vel accusamus aliquam impedit
+            voluptatum expedita dolorum? Tempora aspernatur ratione rerum minus! Soluta, beatae consequuntur. Distinctio
+            cumque ipsam dolores possimus blanditiis optio ex nemo facere odit.
+        </p>
+    </section>
+    <section class="testemonials-section">
+        <h4 class="primary-heading">Dét siger vores kunder</h4>
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell">
+                <p class="main-text bold gallery-cell-name">Kim Sørensen - Eluminate</p>
+                <p class="main-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eaque consectetur odio vero
+                    tempora aspernatur magni eos modi est incidunt provident.</p>
+                <div class="cell-rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <p class="main-text bold gallery-cell-name">Kim Sørensen - Eluminate</p>
+                <p class="main-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eaque consectetur odio vero
+                    tempora aspernatur magni eos modi est incidunt provident.</p>
+                <div class="cell-rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <p class="main-text bold gallery-cell-name">Kim Sørensen - Eluminate</p>
+                <p class="main-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eaque consectetur odio vero
+                    tempora aspernatur magni eos modi est incidunt provident.</p>
+                <div class="cell-rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <p class="main-text bold gallery-cell-name">Kim Sørensen - Eluminate</p>
+                <p class="main-text"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eaque consectetur odio vero
+                    tempora aspernatur magni eos modi est incidunt provident.</p>
+                <div class="cell-rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating">
+                </div>
+            </div>
+            </div>
+            <p class="main-text">Se vores andre anmeldelser på <a class="color-primary" href="#">Google</a></p>
 
-<script src="./js/jquery-3.6.0.js"></script>
-<script src="./js/main.js"></script>
+    </section>
+    <section class="references-section">
+        <h5 class="primary-heading">
+            Hvis du er sej så
+            <br>
+            <strong class="primmary-heading--alternate color-secondary">se vores tidligere arbejde</strong>
+        </h5>
+        <p class="main-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, quas ut! Hic commodi, praesentium, quae
+            ipsum molestiae sapiente consequuntur beatae quis fuga consequatur, eveniet ratione! Rerum, ratione dolorem
+            numquam suscipit facere possimus voluptates voluptas omnis quidem aut explicabo laborum expedita officiis
+            nihil libero nesciunt aliquam architecto quas repellat reiciendis aspernatur.
+        </p>
+        <img class="references-image" src="./assets/images/references/references-chilis-grill.png"
+            alt="Chilis grill mockup">
+        <a href="" class="primary-cta-btn references-cta-btn">Se andre projekter</a>
+    </section>
+    <section class="get-offer-section">
+        <h6 class="hero-heading">
+            Skal du også have en hjemmeside som skaber resultater?
+        </h6>
+        <a href="" class="primary-cta-btn references-cta-btn">Få et tilbud</a>
+    </section>
+    <footer>
+        <div class="footer-contact-info-container">
+            <div class="footer-contact-info-block">+45 25 52 13 37</div>
+            <div class="footer-contact-info-block">Man-Fre: 09.00-17.00</div>
+            <div class="footer-contact-info-block">kontakt@riseanddesign.dk</div>
+        </div>
+        <div class="footer-newsletter-container">
+            <h6 class="main-text">Nyhedsbrev</h6>
+            <form action="" class="footer-newsletter-form">
+                <input type="text" class="footer-newsletter-input" placeholder="Navn">
+                <input type="text" class="footer-newsletter-input" placeholder="Email">
+                <a href="" class="primary-cta-btn footer-newsletter-btn">Skriv mig op</a>
+            </form>
+        </div>
+        <div class="footer-grid-container">
+            <a href="" class="main-text footer-grid-contact">Kontakt</a>
+            <a href="" class="main-text footer-grid-cookies">Cookies</a>
+            <a href="" class="main-text footer-grid-privacy">Privatlivspolitik</a>
+            <a href="" class="main-text footer-grid-some">Sociale medier</a>
+            <div class="footer-practical-info footer-grid-practical">
+                <p class="main-text">CVR: 42 16 68 39</p>
+                <p class="main-text">Nørregade 24D 1. th. <br>4600 Køge</p>
+            </div>
+            <div class="footer-logo-container">
+                <img src="./assets/icons/brand-logo.svg" alt="Rise & Design logo" class="footer-logo">
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
