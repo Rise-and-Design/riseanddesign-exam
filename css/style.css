@@ -96,7 +96,7 @@ body {
     font-weight: bold;
 }
 
-section:not(.hero-section):not(.get-offer-section):not(.testemonials-section) {
+section:not(.hero-section):not(.get-offer-section):not(.testemonials-section):not(.projects-carousel) {
     padding: 1rem 1.5rem 3rem 1.5rem;
 }
 
@@ -706,4 +706,84 @@ footer {
 
 .contact-location-grid-location {
     grid-area: cvr;
+}
+
+/* Inspiration styling */
+
+.projects-section {
+    padding: 2rem 0;
+}
+
+.projects-container {
+    margin-top: 6rem;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+}
+
+.projects-mockup {
+    margin-top: -8rem;
+    margin-bottom: 0.5rem;
+}
+
+.projects-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-heading {
+    color: var(--primary-color);
+    font: var(--primary-heading);
+    font-size: 1.7rem;
+}
+
+.projects-link {
+    font-family: Contrail-one;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    align-self: center;
+}
+
+
+.projects-carousel {
+}
+
+.portfolio-gallery {
+    background: transparent;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-gallery-cell {
+    width: 80%;
+    height: 27rem;
+    margin-right: 10px;
+    background-color: var(--white-color) !important;
+    counter-increment: gallery-cell;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.portfolio-gallery-image {
+    width: 90%;
+    margin-top: -1rem;
+}
+
+.portfolio-cell-text {
+    margin-top: 2rem;
+}
+
+.portfolio-cell-link {
+    font-family: Contrail-one;
+    color: var(--primary-color);
+    margin-top: 1rem;
 }
