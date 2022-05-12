@@ -281,7 +281,7 @@ footer {
     padding: 1rem;
     box-shadow: var(--box-shadow);
     margin: .5rem 0;
-    background-color: var(--background-color);
+    background-color: var(--white-color);
     font: var(--main-text);
     text-align: center;
     border-radius: 5px;
@@ -708,7 +708,7 @@ footer {
     grid-area: cvr;
 }
 
-/* Inspiration styling */
+/* -------------------- INSPIRATION STYLING -------------------- */
 
 .projects-section {
     padding: 2rem 0;
@@ -783,3 +783,49 @@ footer {
     color: var(--primary-color);
     margin-top: 1rem;
 }
+
+/* -------------------- ABOUT STYLING -------------------- */
+
+.employee-container {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white-color);
+    height: 32rem;
+    margin-top: 10.5rem;
+}
+
+.employee-content-card {
+    position: relative;
+    top: -7.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.employee-content-card h3 {
+    font-size: 2em;
+}
+
+.employee-content-card > img {
+    width: 75%;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.employee-contact-information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.employee-contact-content {
+    display: flex;
+    flex-direction: row;
+    margin: .5rem 0;
+    height: 3rem;
+}
+
+.employee-icon {
+    margin-right: 1rem;
+}
+
