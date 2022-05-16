@@ -52,4 +52,37 @@ https://codepen.io/studiojvla/pen/qVbQqW
       height: 2rem !important;
   }
 
+/* ---------------- BURGER MENU --------------- */
 
+.burger-bar.burger-top {
+  animation: topbar .25s .125s ease forwards;
+}
+
+.burger-bar.burger-middle {
+  animation: middlebar .25s ease forwards;
+}
+
+.burger-bar.burger-bottom {
+  animation: bottombar .25s .125s ease forwards;
+}
+
+@keyframes middlebar {
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+
+@keyframes topbar {
+  100% {
+    transform: rotate(-47deg);
+    transform-origin: top right;
+  }
+}
+
+@keyframes bottombar {
+  100% {
+    transform: rotate(47deg);
+    transform-origin: bottom right;
+  }
+}
