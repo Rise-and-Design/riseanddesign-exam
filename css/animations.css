@@ -19,6 +19,7 @@ https://codepen.io/studiojvla/pen/qVbQqW
       transform: translateX(calc(-250px * 4));
     }
   }
+
   .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -28,7 +29,6 @@ https://codepen.io/studiojvla/pen/qVbQqW
     position: relative;
     width: 100vw;
   }
-
 
   .slider .slide-track {
     -webkit-animation: scroll 30s linear infinite;
@@ -51,7 +51,6 @@ https://codepen.io/studiojvla/pen/qVbQqW
   .smaller-logo {
       height: 2rem !important;
   }
-
 
 
 /* ---------------- BURGER MENU --------------- */
