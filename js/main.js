@@ -7,37 +7,24 @@ $(".burger-toggle").click(function () {
     $(".burger-bar-bottom").toggleClass("burger-bottom");
 });
 
-// Testimonials Carousel 
 
+// Scroll animation
+// Inspiration form: https://alvarotrigo.com/blog/css-animations-scroll/
 
-// Close newsletter popup
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
 
-const closeNewsBtn = document.querySelector("[data-close-news]");
-const newsPopup = document.querySelector(".newsletter-popup");
-const newsPopupBackdrop = document.querySelector("[data-popup-backdrop]")
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
 
-closeNewsBtn.addEventListener("click", (e) => {
-    newsPopup.classList.add("newsletter-popup-closed");
-    newsPopupBackdrop.classList.add("newsletter-popup-closed");
-    setTimeout(function() {
-        newsPopupBackdrop.classList.add("newsletter-popup-removed");
-    }, 1000)
-})
+    if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+    } else {
+        reveals[i].classList.remove("active");
+    }
+    }
+}
 
-newsPopupBackdrop.addEventListener("click", (e) => {
-    newsPopup.classList.add("newsletter-popup-closed");
-    newsPopupBackdrop.classList.add("newsletter-popup-closed");
-    setTimeout(function() {
-        newsPopupBackdrop.classList.add("newsletter-popup-removed");
-    }, 1000)
-});
-
-//Newsletter popup only shows if not in LocalStorage
-
-// $j(document).ready(function() {
-//     if(localStorage.getItem('popState') != 'shown'){
-//         document.body.innerHTML =
-            
-//         $j('.newsletter-popup').delay(2000).fadeIn();
-//         localStorage.setItem('popState','shown')
-//     }
+window.addEventListener("scroll", reveal);
