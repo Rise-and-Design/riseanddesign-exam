@@ -181,7 +181,7 @@ https://codepen.io/studiojvla/pen/qVbQqW
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-300px * 4));
+      transform: translateX(calc(-300px * 8));
     }
   }
   
@@ -190,7 +190,7 @@ https://codepen.io/studiojvla/pen/qVbQqW
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-300px * 4));
+      transform: translateX(calc(-300px * 8));
     }
   }
   .slider {
@@ -205,10 +205,10 @@ https://codepen.io/studiojvla/pen/qVbQqW
 
 
   .slider .slide-track {
-    -webkit-animation: scroll 30s linear infinite;
-            animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 60s linear infinite;
+            animation: scroll 60s linear infinite;
     display: flex;
-    width: calc(300px * 4);
+    width: calc(300px * 8);
   }
   .slider .slide {
     height: 4.4rem;
@@ -234,13 +234,13 @@ https://codepen.io/studiojvla/pen/qVbQqW
 
 @keyframes popup {
   60% {
-    height: 76vh;
+    height: fit-content
     width: 1rem;
     border-radius: 5px;
   }
   100% {
     width: calc(100vw - 3rem);
-    height: 76vh;
+    height: fit-content;
     border-radius: 5px;
   }
 }
@@ -283,11 +283,11 @@ https://codepen.io/studiojvla/pen/qVbQqW
   0% {
 
     width: calc(100vw - 3rem);
-    height: 76vh;
+    height: fit-content;
     border-radius: 5px;
   }
   60% {
-    height: 76vh;
+    height: fit-content;
     width: 1rem;
     border-radius: 5px;    
   }
