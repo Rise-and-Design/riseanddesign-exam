@@ -134,7 +134,7 @@ section:not(.hero-section):not(.get-offer-section):not(.testemonials-section):no
     background-position: 50% 50%;
     position: relative;
     display: grid;
-    place-content: center;
+    align-items: center;
     padding-left: 1.5rem;
 }
 
@@ -845,7 +845,7 @@ footer {
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     background-color: var(--white-color);
-    height: 32rem;
+    height: 38rem;
     margin-top: 10.5rem;
 }
 
@@ -1285,6 +1285,24 @@ section.contact-location {
 
 @media only screen and (min-width: 1200px)
 {
+
+    /* -------------------- HERO SECTION -------------------- */
+
+
+    .hero-section {
+        height: 50vh;
+        background-size: cover;
+        background-position-y: -300px;
+    }
+
+    .sub-hero-section {
+        height: 35vh;
+    }
+
+    .hero-heading {
+        font-size: 3em;
+    }
+
     /* -------------------- HEADER -------------------- */
 
 
