@@ -16,108 +16,113 @@
 
 <body>
     <header>
-        <a href="./index.html"><img class="logo" src="./assets/icons/brand-logo.svg" alt=""></a>
-        <button class="burger-toggle">
-            <div class="burger-bar"></div>
-            <div class="burger-bar"></div>
-            <div class="burger-bar"></div>
-        </button>
-        <nav class="navigation">
-            <img class="navigation-logo" src="./assets/icons/brand-logo.svg" alt="Rise & Design logo">
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="./index.html">
-                        Forside
-                        <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="">
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="./produkter.html">
-                        Vi tilbyder
-                        <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="">
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link navigation-link--current" href="./om.html">
-                        Om os
-                        <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="">
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="./inspiration.html">
-                        Bliv inspireret
-                        <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="">
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="./kontakt.html">
-                        Kontakt
-                        <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="">
-                    </a>
-                </li>
-            </ul>
-            <a class="primary-cta-btn navigation-cta-btn" href="./kontakt.html">Kontakt</a>
-        </nav>
+        <div class="header-wrapper">
+            <a class="logo-anchor" href="./index.html"><img class="logo" src="./assets/icons/brand-logo.svg" alt=""></a>
+            <button class="burger-toggle">
+                <div class="burger-bar burger-bar-top burger-top-close"></div>
+                <div class="burger-bar burger-bar-middle burger-middle-close"></div>
+                <div class="burger-bar burger-bar-bottom burger-bottom-close"></div>
+            </button>
+            <nav class="navigation">
+                <img class="navigation-logo" src="./assets/icons/brand-logo.svg" alt="Rise & Design logo"
+                    loading="lazy">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-1" href="./index.html">
+                            Forside
+                            <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-2" href="./produkter.html">
+                            Vi tilbyder
+                            <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-3 navigation-link--current" href="./om.html">
+                            Om os
+                            <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-4" href="./inspiration.html">
+                            Bliv inspireret
+                            <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-5" href="./kontakt.html">
+                            Kontakt
+                            <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+                <a class="primary-cta-btn navigation-cta-btn" href="./kontakt.html">Kontakt</a>
+            </nav>
+        </div>
     </header>
     <section class="sub-hero-section about-hero">
         <h1 class="hero-heading">Hør mere om fordele ved at handle med os</h1>
     </section>
     <section class="about-intro">
-        <h2 class="primary-heading">
+        <h2 class="primary-heading about-heading">
             Bag om Rise & Design
             <br>
             <strong class="primmary-heading--alternate color-secondary">Lær os at kende</strong>
         </h2>
-        <p class="main-text">
+        <p class="main-text about-text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut perspiciatis quasi, perferendis excepturi
             iure quidem qui magni soluta molestias distinctio doloribus repudiandae praesentium. Incidunt dolorem
             consequatur delectus iusto reprehenderit animi. Quasi, earum possimus mollitia eos placeat aliquam aut
             dolorem?
         </p>
-        <video class="intro-video" src="" poster="./assets/images/index-intro-video-thumbnail.png"></video>
+        <video class="intro-video about-video" src="" poster="./assets/images/index-intro-video-thumbnail.png"></video>
     </section>
-    <section class="about-employees-section section-color--alternate">
-        <div class="employee-container">
-            <div class="employee-content-card">
-                <img src="./assets/images/employees/about-oliver.jpg" alt="Ejer Oliver Hansen">
-                <h3 class="primary-heading">Oliver Hansen</h3>
-                <p class="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et repellat ab distinctio quo
-                    culpa rerum accusantium, sunt laboriosam impedit adipisci placeat quod consequuntur similique sed fugiat
-                    dolore est eius saepe quidem dolorem! Excepturi saepe quasi perspiciatis, officia atque id quod.
-                </p>
-                <div class="employee-contact-information">
-                    <div class="employee-contact-content">
-                        <img class="employee-icon" src="./assets/icons/iconset/linkedin.svg" alt="LinkedIn ikon" >
-                        <p class="main-text">Oliver Philip Hansen</p>
-                    </div>
-                    <div class="employee-contact-content">
-                        <img class="employee-icon" src="./assets/icons/iconset/email.svg" alt="LinkedIn ikon" >
-                        <p class="main-text">oliver@riseanddesign.dk</p>
+    <div class="section-color--alternate">
+        <section class="about-employees-section">
+            <div class="employee-container reveal">
+                <div class="employee-content-card">
+                    <img src="./assets/images/employees/about-oliver.jpg" alt="Ejer Oliver Hansen">
+                    <h3 class="primary-heading">Oliver Hansen</h3>
+                    <p class="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et repellat ab distinctio quo
+                        culpa rerum accusantium, sunt laboriosam impedit adipisci placeat quod consequuntur similique sed fugiat
+                        dolore est eius saepe quidem dolorem! Excepturi saepe quasi perspiciatis, officia atque id quod.
+                    </p>
+                    <div class="employee-contact-information">
+                        <div class="employee-contact-content">
+                            <img class="employee-icon" src="./assets/icons/iconset/linkedin.svg" alt="LinkedIn ikon" >
+                            <p class="main-text">Oliver Philip Hansen</p>
+                        </div>
+                        <div class="employee-contact-content">
+                            <img class="employee-icon" src="./assets/icons/iconset/email.svg" alt="LinkedIn ikon" >
+                            <p class="main-text">oliver@riseanddesign.dk</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="employee-container">
-            <div class="employee-content-card">
-                <img src="./assets/images/employees/about-alex.jpg" alt="Ejer Alex Andersen">
-                <h3 class="primary-heading">Alex Andersen</h3>
-                <p class="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et repellat ab distinctio quo
-                    culpa rerum accusantium, sunt laboriosam impedit adipisci placeat quod consequuntur similique sed fugiat
-                    dolore est eius saepe quidem dolorem! Excepturi saepe quasi perspiciatis, officia atque id quod.
-                </p>
-                <div class="employee-contact-information">
-                    <div class="employee-contact-content">
-                        <img class="employee-icon" src="./assets/icons/iconset/linkedin.svg" alt="LinkedIn ikon" >
-                        <p class="main-text">Alex Hjorth Andersen</p>
-                    </div>
-                    <div class="employee-contact-content">
-                        <img class="employee-icon" src="./assets/icons/iconset/email.svg" alt="LinkedIn ikon" >
-                        <p class="main-text">alex@riseanddesign.dk</p>
+            <div class="employee-container reveal">
+                <div class="employee-content-card">
+                    <img src="./assets/images/employees/about-alex.jpg" alt="Ejer Alex Andersen">
+                    <h3 class="primary-heading">Alex Andersen</h3>
+                    <p class="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et repellat ab distinctio quo
+                        culpa rerum accusantium, sunt laboriosam impedit adipisci placeat quod consequuntur similique sed fugiat
+                        dolore est eius saepe quidem dolorem! Excepturi saepe quasi perspiciatis, officia atque id quod.
+                    </p>
+                    <div class="employee-contact-information">
+                        <div class="employee-contact-content">
+                            <img class="employee-icon" src="./assets/icons/iconset/linkedin.svg" alt="LinkedIn ikon" >
+                            <p class="main-text">Alex Hjorth Andersen</p>
+                        </div>
+                        <div class="employee-contact-content">
+                            <img class="employee-icon" src="./assets/icons/iconset/email.svg" alt="LinkedIn ikon" >
+                            <p class="main-text">alex@riseanddesign.dk</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer>
         <div class="footer-contact-info-container">
             <div class="footer-contact-info-block">+45 25 52 13 37</div>
