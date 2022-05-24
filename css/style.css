@@ -16,21 +16,25 @@ body {
 @font-face {
     font-family: Roboto;
     src: url(../assets/fonts/Roboto-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Roboto-medium;
     src: url(../assets/fonts/Roboto-Medium.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Roboto-bold;
     src: url(../assets/fonts/Roboto-Bold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Contrail-one;
     src: url(../assets/fonts/ContrailOne-Regular.ttf);
+    font-display: swap;
 }
 
 :root {
@@ -47,7 +51,7 @@ body {
 
     --hero-heading: 1.5rem Contrail-one;
     --primary-heading: 1.3rem Contrail-one;
-    --sub-heading: 1rem Contrail-one;
+    --sub-heading: 1.2rem Contrail-one;
     --main-text: 1rem Roboto;
     --btn-text: 1rem Contrail-one;
     --box-shadow: 0px 3px 6px rgba(0, 0, 0, 17%);
@@ -272,6 +276,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0;
+    transition: all .25s ease;
 }
 
 .navigation-link--current {
@@ -285,6 +290,8 @@ header {
 .navigation-cta-btn {
     margin-top: 2rem;
     font-size: 1.5rem;
+    transition: all .25s ease;
+
 }
 
 .burger-toggle {
@@ -339,7 +346,7 @@ footer {
     text-align: center;
 }
 
-.footer-newsletter-container>h6 {
+.footer-newsletter-heading {
     font-size: 1.5em;
 }
 
@@ -443,6 +450,7 @@ footer {
 
 .hero-cta-container {
     margin-top: 1rem;
+    height: 3rem;
 }
 
 .hero-cta-container > a {
@@ -781,6 +789,12 @@ footer {
 
 /* -------------------- INSPIRATION STYLING -------------------- */
 
+.inspiration-hero {
+    background-image: url(../assets/images/contact/contact-hero.webp);
+    background-position-y: -325px;
+    background-size: cover;
+}
+
 .projects-section {
     padding: 2rem 0;
 }
@@ -793,11 +807,13 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     padding: 1rem;
+    align-items: flex-start;
 }
 
 .projects-mockup {
     margin-top: -8rem;
     margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 .projects-desc {
@@ -826,7 +842,7 @@ footer {
 
 .portfolio-gallery-cell {
     width: 80%;
-    height: 27rem;
+    height: 30rem;
     margin-right: 10px;
     background-color: var(--white-color) !important;
     counter-increment: gallery-cell;
@@ -852,7 +868,8 @@ footer {
 .portfolio-cell-link {
     font-family: Contrail-one;
     color: var(--primary-color);
-    margin-top: 1rem;
+    position: absolute;
+    bottom: 1rem;
 }
 
 /* -------------------- ABOUT STYLING -------------------- */
@@ -988,7 +1005,7 @@ footer {
     /* -------------------- FOOTER -------------------- */
     
     footer {
-        margin: 0 1.5rem;
+        padding: 0 1.5rem;
     }
     
     .footer-contact-info-container {
@@ -1139,11 +1156,6 @@ footer {
         border-radius: 5px 5px 0 0;
     }
 
-    .call-me-form {
-
-    }
-
-
     .call-me-section {
         padding: 4rem 1.5rem !important;
     }
@@ -1244,13 +1256,17 @@ footer {
 }
 
 .projects-mockup {
-    margin: 0 -30% 0 0;
-    height: 20rem;
+    margin: 1.5rem -30% 0 0;
+    height: auto;
+    width: 70%;
 }
 
 .projects-desc {
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 22rem;
+    min-width: 60% !important;
 }
 
 .projects-heading {
@@ -1260,10 +1276,11 @@ footer {
 }
 
 .projects-link {
+    position: absolute;
     font-family: Contrail-one;
     color: var(--primary-color);
-    margin-top: 1rem;
     align-self: flex-start;
+    bottom: 0;
 }
 
 .portfolio-gallery {
@@ -1273,8 +1290,8 @@ footer {
 }
 
 .portfolio-gallery-cell {
-    width: 30%;
-    height: 27rem;
+    width: 50%;
+    height: 37rem;
     margin-right: 10px;
     background-color: var(--white-color) !important;
     counter-increment: gallery-cell;
@@ -1290,7 +1307,7 @@ footer {
 
 .portfolio-gallery-image {
     width: auto;
-    height: 50%;
+    width: 100%;
     margin-top: -1rem;
 }
 
@@ -1303,6 +1320,8 @@ footer {
     color: var(--primary-color);
     margin-top: 1rem;
     align-self: center;
+    position: absolute;
+    bottom: 1rem;
 }
 
 /* -------------------- ABOUT STYLING -------------------- */
@@ -1453,11 +1472,19 @@ section.contact-location {
 }
 
 /* -------------------- CONTACT STYLING -------------------- */
-
+    a, button {
+        cursor: pointer;
+    }
 }
 
 @media only screen and (min-width: 1200px)
 {
+
+    /* ---------------------- GLOBAL ---------------------------*/
+
+    .primary-cta-btn, .secondary-cta-btn {
+    transition: all .25s ease !important;
+    }
 
     /* -------------------- HERO SECTION -------------------- */
     .desktop-wrapper {
@@ -1478,6 +1505,12 @@ section.contact-location {
 
     .hero-heading {
         font-size: 3em;
+    }
+
+    .hero-cta-container .primary-cta-btn:hover,.hero-cta-container .secondary-cta-btn:hover  {
+        transform: scale(.9) !important;
+        transition: all .25s ease;
+        font-size: 1.2rem;
     }
 
     /* -------------------- HEADER -------------------- */
@@ -1503,6 +1536,19 @@ section.contact-location {
         margin: auto 0 auto 1rem;
         font-size: 1.3rem;
         transform: scale(1);
+        cursor: pointer;
+    }
+
+    .navigation-link:not(.navigation-link--current):hover {
+        color: var(--primary-color);
+    }
+
+    .navigation-cta-btn:hover {
+        transform: scale(.9);
+    }
+
+    .primary-cta-btn:hover, .secondary-cta-btn:hover {
+        transform: scale(.9) !important;
     }
 
     /* -------------------- FOOTER -------------------- */
@@ -1579,10 +1625,6 @@ section.contact-location {
         .call-me-container h2 {
             margin-top: 1rem;
             font-size: 1.2rem;
-        }
-    
-        .call-me-form {
-    
         }
 
         .call-me-image {
@@ -1695,6 +1737,11 @@ section.contact-location {
         width: auto;
         align-self: center;
     }
+
+    .references-cta-btn:hover {
+        font-size: 1.2rem;
+    }
+
     .reference-btn-mobile {
         display: none;
     }
@@ -1704,6 +1751,7 @@ section.contact-location {
 
     
     /* -------------------- INSPIRATION STYLING -------------------- */
+
 
 .projects-carousel {
     z-index: 1;
@@ -1739,13 +1787,16 @@ section.contact-location {
 }
 
 .projects-mockup {
-    margin: 0 -30% 0 0;
-    height: 20rem;
+    margin: 0 -50% 0 0;
+    width: 50%;
+    height: auto;
 }
 
 .projects-desc {
     display: flex;
     flex-direction: column;
+    height: 20rem;
+    max-width: 60%;
 }
 
 .projects-heading {
@@ -1757,8 +1808,8 @@ section.contact-location {
 .projects-link {
     font-family: Contrail-one;
     color: var(--primary-color);
-    margin-top: 1rem;
     align-self: flex-start;
+    bottom: 0;
 }
 
 .portfolio-gallery {
@@ -1769,7 +1820,7 @@ section.contact-location {
 
 .portfolio-gallery-cell {
     width: 30%;
-    height: 27rem;
+    height: 36rem;
     margin-right: 10px;
     background-color: var(--white-color) !important;
     counter-increment: gallery-cell;
@@ -1784,7 +1835,8 @@ section.contact-location {
 }
 
 .portfolio-gallery-image {
-    width: 90%;
+    width: 100%;
+    height: auto;
     margin-top: -1rem;
 }
 
@@ -2007,4 +2059,53 @@ section.contact-location {
     background-position-y: -400px;
 }
 
+/* -------------------------- PRIVACY ------------------------------- */
+
+.privacy-container {
+    max-width: 50vw;
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow) !important;
+    background-color: var(--white-color);
+}
+
+.privacy-container > h1 {
+    margin-bottom: 2rem;
+}
+
+}
+
+
+/* -------------------------- SPECIFIC SVG STYLING ----------------------------*/
+
+.b {
+    stroke: #fff;
+    stroke-width: 9px;
+}
+
+.b,
+.c {
+    stroke-miterlimit: 10;
+}
+
+.b,
+.c,
+.d {
+    fill: none;
+}
+
+.c {
+    stroke: rgb(233, 86, 12);
+    stroke-linecap: round;
+    stroke-width: 4px;
+}
+
+.e {
+    fill: rgb(233, 86, 12);
+}
+
+.f {
+    fill: #1d1d1b;
 }

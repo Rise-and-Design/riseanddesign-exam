@@ -3,16 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="public" max-age=604800>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/flickity.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link fetchpriority="high" rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/newsletter-popup.css">
     <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
     <title>Rise & Design | Webløsninger til Køges erhvervsliv</title>
     <meta name="keywords" content="web design keyword keyword keyword keyword">
     <meta name="description" content="128 tegns beskrivelse">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNNWZ1RSZS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QNNWZ1RSZS');
+    </script>
 </head>
 
 <body>
@@ -20,39 +30,7 @@
         <div class="header-wrapper">
             <a class="logo-anchor" href="./index.html">
                 <svg class="logo" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.96 207.43">
-                    <defs>
-                        <style>
-                            .b {
-                                stroke: #fff;
-                                stroke-width: 9px;
-                            }
-
-                            .b,
-                            .c {
-                                stroke-miterlimit: 10;
-                            }
-
-                            .b,
-                            .c,
-                            .d {
-                                fill: none;
-                            }
-
-                            .c {
-                                stroke: rgb(233, 86, 12);
-                                stroke-linecap: round;
-                                stroke-width: 4px;
-                            }
-
-                            .e {
-                                fill: rgb(233, 86, 12);
-                            }
-
-                            .f {
-                                fill: #1d1d1b;
-                            }
-                        </style>
-                    </defs>
+                    <title>Rise and Design logo</title>
                     <path class="f"
                         d="M0,135.15H12.89c5.86,0,10.31,.39,13.04,1.41,5.78,2.19,9.22,7.19,9.22,13.51,0,2.81-.39,4.45-1.64,6.95-2.89,5.86-8.51,8.12-17.81,8.12l20.23,26.09h-6.95l-20.15-26.09h-3.2v26.09H0v-56.08Zm5.62,5.47v19.06c3.12,0,6.33,.08,9.29,.08,4.84,0,8.59-.47,11.01-2.42,2.03-1.64,3.36-4.37,3.36-7.26,0-5.47-3.75-9.45-12.18-9.45H5.62Z" />
                     <path class="f"
@@ -149,7 +127,7 @@
 
     </header>
 
-    <section class="hero-section">
+    <section fetchpriority="high" class="hero-section">
         <div class="desktop-wrapper">
             <h1 class="hero-heading">Skal du have en <br> hjemmeside som <br> skaber resultater?</h1>
             <div class="hero-cta-container">
@@ -158,7 +136,7 @@
             </div>
         </div>
     </section>
-    <div id="newsletter-popup" class="newsletter-popup">
+    <div fetchpriority="high" id="newsletter-popup" class="newsletter-popup">
         <div class="newsletter-popup-container">
             <div class="newsletter-popup-content">
                 <h2 class="primary-heading">
@@ -167,7 +145,7 @@
                     <strong class="primmary-heading--alternate color-secondary">Skriv dig op til vores månedlige
                         nyhedsbrev</strong>
                 </h2>
-                <div class="newsletter-cover-image"></div>
+                <div fetchpriority="high" class="newsletter-cover-image"></div>
                 <form action="" class="newsletter-popup-form">
                     <input type="text" placeholder="Navn">
                     <input type="text" placeholder="Email">
@@ -181,34 +159,34 @@
     <div class="slider">
         <div class="slide-track">
             <div class="slide">
-                <img src="./assets/icons/work-brands/koege-kommune-logo.png" alt="Køge kommune logo" loading="lazy" />
+                <img src="./assets/icons/work-brands/koege-kommune-logo.png" alt="Køge kommune logo" loading="lazy" width="166px" height="48px"/>
             </div>
             <div class="slide">
                 <img src="./assets/icons/work-brands/koeges-kaffebar-logo.png" alt="Køges kaffebar logo"
-                    loading="lazy" />
+                    loading="lazy" width="84px" height="48px" />
             </div>
             <div class="slide">
                 <img class="smaller-logo" src="./assets/icons/work-brands/eluminate-logo.png" alt="Eluminate logo"
-                    loading="lazy" />
+                    loading="lazy" width="183px" height="30px" />
             </div>
             <div class="slide">
                 <img class="smaller-logo" src="./assets/icons/work-brands/grafisk-sign-logo.png" alt="GrafiskSign logo"
-                    loading="lazy" />
+                    loading="lazy" width="100px" height="30px" />
             </div>
             <div class="slide">
-                <img src="./assets/icons/work-brands/koege-kommune-logo.png" alt="Køge kommune logo" loading="lazy" />
+                <img src="./assets/icons/work-brands/koege-kommune-logo.png" alt="Køge kommune logo" loading="lazy" width="166px" height="48px"/>
             </div>
             <div class="slide">
                 <img src="./assets/icons/work-brands/koeges-kaffebar-logo.png" alt="Køges kaffebar logo"
-                    loading="lazy" />
+                    loading="lazy" width="84px" height="48px" />
             </div>
             <div class="slide">
                 <img class="smaller-logo" src="./assets/icons/work-brands/eluminate-logo.png" alt="Eluminate logo"
-                    loading="lazy" />
+                    loading="lazy" width="183px" height="30px" />
             </div>
             <div class="slide">
                 <img class="smaller-logo" src="./assets/icons/work-brands/grafisk-sign-logo.png" alt="GrafiskSign logo"
-                    loading="lazy" />
+                    loading="lazy" width="100px" height="30px" />
             </div>
         </div>
     </div>
@@ -237,9 +215,9 @@
                         <br>
                         Bliv ringet op
                     </h2>
-                    <form action="" class="call-me-form">
-                        <input type="text" class="call-me-input" placeholder="Navn">
-                        <input type="text" class="call-me-input" placeholder="Tlf">
+                    <form action="callform.php" class="call-me-form">
+                        <input type="text" class="call-me-input" id="name" placeholder="Navn">
+                        <input type="tel" class="call-me-input" id="message" placeholder="Tlf">
                         <a href="" class="primary-cta-btn call-me-form-btn">Ring mig op</a>
                     </form>
                 </div>
@@ -272,11 +250,11 @@
                     præcist som jeg ville have det! De er mega dygtige og professionelle...
                 </p>
                 <div class="cell-rating">
-                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy">
-                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy">
-                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy">
-                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy">
-                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy" width="29px" height="27px">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy" width="29px" height="27px">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy" width="29px" height="27px">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy" width="29px" height="27px">
+                    <img src="./assets/icons/star.svg" alt="stjerne rating" loading="lazy" width="29px" height="27px">
                 </div>
             </div>
             <!--             <div class="gallery-cell testimonial-cell">
@@ -334,6 +312,9 @@
         </div>
         <p class="main-text">Se vores andre anmeldelser på <a class="color-primary" target="_blank"
                 href="https://www.google.com/search?q=rise+and+design+i%2Fs&rlz=1C1GCEA_enDK923DK923&sxsrf=ALiCzsZEH1CbQNMbUFd62_BI97YRdfSOYg%3A1653325851345&ei=G8CLYt_XFNCPxc8PvbiJoAY&ved=0ahUKEwif0cTgjvb3AhXQR_EDHT1cAmQQ4dUDCA4&uact=5&oq=rise+and+design+i%2Fs&gs_lcp=Cgdnd3Mtd2l6EAMyAggmOgQIIxAnOgQIABBDOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQrwE6EQguEIAEELEDEIMBEMcBEKMCOgsILhCABBCxAxDUAjoOCC4QgAQQsQMQxwEQrwE6DgguEIAEEMcBEK8BENQCOgUIABCxAzoICAAQgAQQsQM6CwgAEIAEELEDEIMBOgUIABCABDoICC4QgAQQsQM6BAguEEM6BwgAELEDEEM6BQguEIAEOggILhCABBDUAjoFCAAQywE6CAguENQCEMsBOgUILhDLAToGCAAQHhAWOggIABAeEBYQCkoECEEYAEoECEYYAFC3BViHJWDnJWgDcAF4AIAB0wGIAbkPkgEFOC45LjGYAQCgAQHAAQE&sclient=gws-wiz#lrd=0xf99bfa5c0a02641:0x1acbdf89fe4e89c0,3,,,">Google</a>
+                eller
+                <a class="color-primary" target="_blank"
+                href="https://dk.trustpilot.com/review/riseanddesign.dk">Trustpilot</a>
         </p>
 
     </section>
@@ -353,7 +334,7 @@
                     projekter</a>
             </div>
             <img class="references-image reveal" src="./assets/images/references/references-chilis-grill.webp"
-                alt="Chilis grill mockup" loading="lazy">
+                alt="Chilis grill mockup" loading="lazy" width="1280px">
             <a href="./inspiration.html" class="primary-cta-btn references-cta-btn reference-btn-mobile">Se andre
                 projekter</a>
         </section>
@@ -373,7 +354,7 @@
             </div>
             <div class="footer-content-container">
                 <div class="footer-newsletter-container">
-                    <h6 class="main-text">Nyhedsbrev</h6>
+                    <p class="main-text footer-newsletter-heading">Nyhedsbrev</p>
                     <form action="" class="footer-newsletter-form">
                         <input type="text" class="footer-newsletter-input" placeholder="Navn">
                         <input type="text" class="footer-newsletter-input" placeholder="Email">
@@ -384,7 +365,7 @@
                 <div class="footer-grid-container">
                     <a href="./kontakt.html" class="main-text footer-grid-contact">Kontakt</a>
                     <div class="footer-grid-legal">
-                        <a href="./cookies.html" class="main-text footer-grid-cookies">Cookies</a>
+                        <a href="./privatliv.html" class="main-text footer-grid-cookies">Cookies</a>
                         <a href="./privatliv.html" class="main-text footer-grid-privacy">Privatlivspolitik</a>
                     </div>
                     <div class="footer-practical-info footer-grid-practical">
