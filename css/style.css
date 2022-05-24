@@ -158,6 +158,10 @@ input:focus, textarea:focus {
     outline: none;
 }
 
+button {
+    border: none;
+}
+
 /* -------------------- SCROLL -------------------- */
 
 .reveal{
