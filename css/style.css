@@ -46,10 +46,10 @@ body {
     --background-color--alternate: rgb(229, 229, 229);
 
     --hero-heading: 1.5rem Contrail-one;
-    --primary-heading: 1.8rem Contrail-one;
-    --sub-heading: 1.4rem Contrail-one;
-    --main-text: 1.2rem Roboto;
-    --btn-text: 1.5rem Contrail-one;
+    --primary-heading: 1.3rem Contrail-one;
+    --sub-heading: 1rem Contrail-one;
+    --main-text: 1rem Roboto;
+    --btn-text: 1rem Contrail-one;
     --box-shadow: 0px 3px 6px rgba(0, 0, 0, 17%);
     --border-radius: 5px;
 }
@@ -484,7 +484,7 @@ footer {
 }
 
 .call-me-content>h2 {
-    font-size: .8em;
+    font-size: 0.8rem;
     margin-bottom: .5rem;
 }
 
@@ -915,6 +915,16 @@ footer {
 /* Tablet styling */
 @media only screen and (min-width: 800px)
 {
+
+    :root {
+        --hero-heading: 1.5rem Contrail-one;
+        --primary-heading: 1.6rem Contrail-one;
+        --sub-heading: 1.4rem Contrail-one;
+        --main-text: 1.2rem Roboto;
+        --btn-text: 1.5rem Contrail-one;
+        --box-shadow: 0px 3px 6px rgba(0, 0, 0, 17%);
+        --border-radius: 5px;
+    }
 
     /* -------------------- HEADER -------------------- */
     header {
@@ -1563,11 +1573,12 @@ section.contact-location {
             overflow: visible;
             width: 100%;
             border-radius: 5px;
-            height: 16rem;
+            height: 20rem;
         }
     
         .call-me-container h2 {
             margin-top: 1rem;
+            font-size: 1.2rem;
         }
     
         .call-me-form {
@@ -1577,8 +1588,8 @@ section.contact-location {
         .call-me-image {
             background-image: url(../assets/images/index-call-me-image.webp);
             width: 60%;
-            background-size: cover;
-            background-position: 50% 70%;
+            background-size: 120%;
+            background-position: 50% 100%;
             position: relative;
             height: 100%;
         }
@@ -1593,8 +1604,12 @@ section.contact-location {
             background-image: var(--cta-gradient);
             opacity: 60%;
         }
+
+        .call-me-form-btn {
+            font-size: 1.2rem;
+            width: fit-content;
+        }
     
- 
     
         /* TESTIMONIALS CAROUSEL */
 
