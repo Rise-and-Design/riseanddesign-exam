@@ -1,11 +1,11 @@
 .newsletter-popup {
-    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     display: none;
     place-content: center;
+    position: absolute;
 }
 
 .newsletter-popup-backdrop {
@@ -27,6 +27,7 @@
     z-index: 1002;
     position: relative;
     margin: 0 auto;
+    max-width: 40rem;
 }
 
 .newsletter-popup-content {
@@ -34,13 +35,19 @@
     padding: 1rem;
 }
 
+.newsletter-popup-content h2 {
+    margin: 0 auto;
+}
+
 .newsletter-cover-image {
     background-image: url(../assets/images/newsletter/newsletter-cover.png);
     height: 13rem;
     width: 100%;
+    max-width: 20rem;
     background-size: cover;
     margin: 2rem 0;
     box-shadow: var(--box-shadow);
+    margin: 2rem auto;
 }
 
 .newsletter-popup-form {
@@ -51,8 +58,10 @@
 .newsletter-popup-form input {
     padding: 1rem;
     border: none;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
     background-color: var(--line-color);
+    width: 100%;
+    max-width: 20rem;
 }
 
 .newsletter-popup-submit {
@@ -66,11 +75,20 @@
     float: right;
     border: none;
     background-color: transparent;
-    margin: 2rem 0 0 0;
     color: var(--secondary-color);
+    position: relative;
+    margin: 2rem 0;
+    bottom: 0;
+    right: 1rem;
     opacity: 0%;
 }
 
 .newsletter-popup-removed {
     display: none;
+}
+
+@media only screen and (min-width: 800px){
+    .newsletter-popup-content h2 {
+        max-width: 50%;
+    }
 }
