@@ -12,6 +12,14 @@
     <title>Rise & Design | Webløsninger til Køges erhvervsliv</title>
     <meta name="keywords" content="web design keyword keyword keyword keyword">
     <meta name="description" content="128 tegns beskrivelse">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNNWZ1RSZS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QNNWZ1RSZS');
+    </script>
 </head>
 
 <body>
@@ -63,7 +71,9 @@
         </div>
     </header>
     <section class="sub-hero-section contact-hero">
-        <h1 class="hero-heading">Vi vil så gerne lære <br> din virksomhed at kende</h1>
+        <div class="desktop-wrapper">
+            <h1 class="hero-heading">Vi vil så gerne lære <br> din virksomhed at kende</h1>
+        </div>
     </section>
     <section class="contact-section">
         <h2 class="primary-heading">
@@ -85,15 +95,14 @@
                 </div>
             </div>
             <div class="contact-form-section">
-                <form action="" class="contact-form">
-                    <input type="text" class="contact-form-input" placeholder="Navn">
-                    <input type="email" class="contact-form-input" placeholder="Email">
-                    <input type="text" class="contact-form-input" placeholder="Emne">
-                    <textarea class="contact-form-textarea" name="text" rows="10" placeholder="Besked"></textarea>
-                    <button class="primary-cta-btn contact-form-btn">Få et tilbud</button>
+                <form action="contactform.php" class="contact-form" method="post">
+                    <input type="text" class="contact-form-input" id="username" placeholder="Navn">
+                    <input type="email" class="contact-form-input" id="email" placeholder="Email">
+                    <input type="text" class="contact-form-input" id="subject" placeholder="Emne">
+                    <textarea class="contact-form-textarea" name="message" id="comments" rows="10" placeholder="Besked"></textarea>
+                    <button class="primary-cta-btn contact-form-btn" type="submit" value="Submit">Få et tilbud</button>
                 </form>
             </div>
-
         </div>
     </section>
     <div class="contact-wrapper section-color--alternate">
@@ -168,7 +177,7 @@
             <div class="footer-grid-container">
                 <a href="./kontakt.html" class="main-text footer-grid-contact">Kontakt</a>
                 <div class="footer-grid-legal">
-                    <a href="./cookies.html" class="main-text footer-grid-cookies">Cookies</a>
+                    <a href="./privatliv.html" class="main-text footer-grid-cookies">Cookies</a>
                     <a href="./privatliv.html" class="main-text footer-grid-privacy">Privatlivspolitik</a>
                 </div>
                 <div class="footer-practical-info footer-grid-practical">

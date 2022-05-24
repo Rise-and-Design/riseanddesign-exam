@@ -16,21 +16,25 @@ body {
 @font-face {
     font-family: Roboto;
     src: url(../assets/fonts/Roboto-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Roboto-medium;
     src: url(../assets/fonts/Roboto-Medium.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Roboto-bold;
     src: url(../assets/fonts/Roboto-Bold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Contrail-one;
     src: url(../assets/fonts/ContrailOne-Regular.ttf);
+    font-display: swap;
 }
 
 :root {
@@ -47,7 +51,7 @@ body {
 
     --hero-heading: 1.5rem Contrail-one;
     --primary-heading: 1.3rem Contrail-one;
-    --sub-heading: 1rem Contrail-one;
+    --sub-heading: 1.2rem Contrail-one;
     --main-text: 1rem Roboto;
     --btn-text: 1rem Contrail-one;
     --box-shadow: 0px 3px 6px rgba(0, 0, 0, 17%);
@@ -62,7 +66,6 @@ body {
     color: var(--white-color);
     position: relative;
     z-index: 1;
-    max-width: 60%;
 }
 
 .primary-heading {
@@ -153,6 +156,10 @@ section:not(.hero-section):not(.get-offer-section):not(.testemonials-section):no
 
 input:focus, textarea:focus {
     outline: none;
+}
+
+button {
+    border: none;
 }
 
 /* -------------------- SCROLL -------------------- */
@@ -268,10 +275,12 @@ header {
 
 .navigation-link {
     font: var(--main-text);
+    font-size: 1rem;
     color: var(---black-color);
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0;
+    transition: all .25s ease;
 }
 
 .navigation-link--current {
@@ -285,6 +294,8 @@ header {
 .navigation-cta-btn {
     margin-top: 2rem;
     font-size: 1.5rem;
+    transition: all .25s ease;
+
 }
 
 .burger-toggle {
@@ -339,7 +350,7 @@ footer {
     text-align: center;
 }
 
-.footer-newsletter-container>h6 {
+.footer-newsletter-heading {
     font-size: 1.5em;
 }
 
@@ -359,7 +370,7 @@ footer {
 }
 
 .footer-newsletter-btn {
-    width: 8rem;
+    width: 12rem;
     align-self: center;
     margin-top: .5rem;
 }
@@ -418,7 +429,7 @@ footer {
 .hero-section {
     height: 28.5vh;
     margin-top: 5rem;
-    background-image: url(../assets/images/index-hero-image.png);
+    background-image: url(../assets/images/index-hero-image.webp);
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -443,6 +454,16 @@ footer {
 
 .hero-cta-container {
     margin-top: 1rem;
+    height: 3rem;
+}
+
+.hero-cta-container > a {
+    font-size: 1em;
+    margin-right: 1rem;
+}
+
+.desktop-wrapper {
+    width: calc(100vw - 2rem);
 }
 
 /* -------------------- INTRO SECTION -------------------- */
@@ -475,12 +496,12 @@ footer {
 }
 
 .call-me-content>h2 {
-    font-size: .8em;
+    font-size: 0.8rem;
     margin-bottom: .5rem;
 }
 
 .call-me-image {
-    background-image: url(../assets/images/index-call-me-image.jpg);
+    background-image: url(../assets/images/index-call-me-image.webp);
     width: 60%;
     background-size: 150%;
     background-position: 50% 100%;
@@ -598,7 +619,6 @@ footer {
 }
 
 .references-cta-btn {
-    width: 10rem;
     align-self: center;
 }
 
@@ -610,8 +630,9 @@ footer {
 
 .get-offer-section {
     height: 35vh;
-    background-image: url(../assets/images/get-offer-image.jpg);
+    background-image: url(../assets/images/get-offer-image.webp);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -634,7 +655,7 @@ footer {
 /* -------------------- PRODUCTS STYLING -------------------- */
 
 .products-hero {
-    background-image: url(../assets/images/products/products-hero.png);
+    background-image: url(../assets/images/products/products-hero.webp);
 }
 
 .product-section {
@@ -642,7 +663,7 @@ footer {
 }
 
 .product-image {
-    background-image: url(../assets/images/products/products-hero.png);
+    background-image: url(../assets/images/products/products-hero.webp);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -675,7 +696,7 @@ footer {
 /* -------------------- CONTACT STYLING -------------------- */
 
 .contact-hero {
-    background-image: url(../assets/images/contact/contact-hero.png);
+    background-image: url(../assets/images/contact/contact-hero.webp);
 }
 
 .contact-hero > .hero-heading {
@@ -772,6 +793,12 @@ footer {
 
 /* -------------------- INSPIRATION STYLING -------------------- */
 
+.inspiration-hero {
+    background-image: url(../assets/images/contact/contact-hero.webp);
+    background-position-y: -325px;
+    background-size: cover;
+}
+
 .projects-section {
     padding: 2rem 0;
 }
@@ -784,11 +811,13 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     padding: 1rem;
+    align-items: flex-start;
 }
 
 .projects-mockup {
     margin-top: -8rem;
     margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 .projects-desc {
@@ -817,7 +846,7 @@ footer {
 
 .portfolio-gallery-cell {
     width: 80%;
-    height: 27rem;
+    height: 30rem;
     margin-right: 10px;
     background-color: var(--white-color) !important;
     counter-increment: gallery-cell;
@@ -843,30 +872,32 @@ footer {
 .portfolio-cell-link {
     font-family: Contrail-one;
     color: var(--primary-color);
-    margin-top: 1rem;
+    position: absolute;
+    bottom: 1rem;
 }
 
 /* -------------------- ABOUT STYLING -------------------- */
 
 .about-hero {
-    background-image: url(../assets/images/about/about-hero.jpg);
+    background-image: url(../assets/images/about/about-hero.webp);
 }
 
 
 .employee-container {
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    background-color: var(--white-color);
-    height: 38rem;
-    margin-top: 10.5rem;
+    margin-top: 9rem;
+    margin-bottom: 6rem;
 }
 
 .employee-content-card {
-    position: relative;
-    top: -7.5rem;
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 1rem;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    position: relative;
+    height: 44rem;
 }
 
 .employee-content-card h3 {
@@ -877,12 +908,16 @@ footer {
     width: 75%;
     border-radius: 5px;
     align-self: center;
+    margin-top: -35%;
+    margin-top: -35%;
 }
 
 .employee-contact-information {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: absolute;
+    bottom: 1rem;
 }
 
 .employee-contact-content {
@@ -901,6 +936,16 @@ footer {
 /* Tablet styling */
 @media only screen and (min-width: 800px)
 {
+
+    :root {
+        --hero-heading: 1.5rem Contrail-one;
+        --primary-heading: 1.6rem Contrail-one;
+        --sub-heading: 1.4rem Contrail-one;
+        --main-text: 1.2rem Roboto;
+        --btn-text: 1.5rem Contrail-one;
+        --box-shadow: 0px 3px 6px rgba(0, 0, 0, 17%);
+        --border-radius: 5px;
+    }
 
     /* -------------------- HEADER -------------------- */
     header {
@@ -964,7 +1009,7 @@ footer {
     /* -------------------- FOOTER -------------------- */
     
     footer {
-        margin: 0 1.5rem;
+        padding: 0 1.5rem;
     }
     
     .footer-contact-info-container {
@@ -1031,7 +1076,16 @@ footer {
         align-self: unset;
     }
     
+    /*------------------- HERO ---------------------------*/
 
+    .desktop-wrapper {
+        width: calc(100vw - 3rem);
+    }
+
+    .hero-cta-container > a {
+        font-size: 1.3em;
+        margin-right: 1rem;
+    }
 
     /* -------------------- INDEX STYLING -------------------- */
     .intro-section {
@@ -1105,11 +1159,6 @@ footer {
         opacity: 60%;
         border-radius: 5px 5px 0 0;
     }
-
-    .call-me-form {
-
-    }
-
 
     .call-me-section {
         padding: 4rem 1.5rem !important;
@@ -1211,13 +1260,17 @@ footer {
 }
 
 .projects-mockup {
-    margin: 0 -30% 0 0;
-    height: 20rem;
+    margin: 1.5rem -30% 0 0;
+    height: auto;
+    width: 70%;
 }
 
 .projects-desc {
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 22rem;
+    min-width: 60% !important;
 }
 
 .projects-heading {
@@ -1227,10 +1280,11 @@ footer {
 }
 
 .projects-link {
+    position: absolute;
     font-family: Contrail-one;
     color: var(--primary-color);
-    margin-top: 1rem;
     align-self: flex-start;
+    bottom: 0;
 }
 
 .portfolio-gallery {
@@ -1240,8 +1294,8 @@ footer {
 }
 
 .portfolio-gallery-cell {
-    width: 30%;
-    height: 27rem;
+    width: 50%;
+    height: 37rem;
     margin-right: 10px;
     background-color: var(--white-color) !important;
     counter-increment: gallery-cell;
@@ -1257,7 +1311,7 @@ footer {
 
 .portfolio-gallery-image {
     width: auto;
-    height: 50%;
+    width: 100%;
     margin-top: -1rem;
 }
 
@@ -1270,6 +1324,8 @@ footer {
     color: var(--primary-color);
     margin-top: 1rem;
     align-self: center;
+    position: absolute;
+    bottom: 1rem;
 }
 
 /* -------------------- ABOUT STYLING -------------------- */
@@ -1297,16 +1353,18 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 1rem;
+    justify-content: space-between;
 }
 
 .employee-container {
-    height: 37rem;
+    height: 42rem;
+    width: 49%;
 }
 
 /* -------------------- CONTACT STYLING -------------------- */
 
 .contact-hero {
-    background-image: url(../assets/images/contact/contact-hero.png);
+    background-image: url(../assets/images/contact/contact-hero.webp);
 }
 
 .contact-hero > .hero-heading {
@@ -1380,7 +1438,7 @@ section.contact-location {
 /* -------------------- PRODUCTS STYLING -------------------- */
 
 .products-hero {
-    background-image: url(../assets/images/products/products-hero.png);
+    background-image: url(../assets/images/products/products-hero.webp);
 }
 
 .product-intro {
@@ -1401,7 +1459,7 @@ section.contact-location {
 }
 
 .product-image {
-    background-image: url(../assets/images/products/products-hero.png);
+    background-image: url(../assets/images/products/products-hero.webp);
     margin-top: 2rem;
     width: 40%;
     height: 16rem;
@@ -1418,14 +1476,25 @@ section.contact-location {
 }
 
 /* -------------------- CONTACT STYLING -------------------- */
-
+    a, button {
+        cursor: pointer;
+    }
 }
 
 @media only screen and (min-width: 1200px)
 {
 
-    /* -------------------- HERO SECTION -------------------- */
+    /* ---------------------- GLOBAL ---------------------------*/
 
+    .primary-cta-btn, .secondary-cta-btn {
+    transition: all .25s ease !important;
+    }
+
+    /* -------------------- HERO SECTION -------------------- */
+    .desktop-wrapper {
+        width: 100vw;
+        max-width: 1400px;
+    }
 
     .hero-section {
         height: 50vh;
@@ -1435,10 +1504,17 @@ section.contact-location {
 
     .sub-hero-section {
         height: 35vh;
+        place-content: center;
     }
 
     .hero-heading {
         font-size: 3em;
+    }
+
+    .hero-cta-container .primary-cta-btn:hover,.hero-cta-container .secondary-cta-btn:hover  {
+        transform: scale(.9) !important;
+        transition: all .25s ease;
+        font-size: 1.2rem;
     }
 
     /* -------------------- HEADER -------------------- */
@@ -1464,6 +1540,19 @@ section.contact-location {
         margin: auto 0 auto 1rem;
         font-size: 1.3rem;
         transform: scale(1);
+        cursor: pointer;
+    }
+
+    .navigation-link:not(.navigation-link--current):hover {
+        color: var(--primary-color);
+    }
+
+    .navigation-cta-btn:hover {
+        transform: scale(.9);
+    }
+
+    .primary-cta-btn:hover, .secondary-cta-btn:hover {
+        transform: scale(.9) !important;
     }
 
     /* -------------------- FOOTER -------------------- */
@@ -1534,22 +1623,19 @@ section.contact-location {
             overflow: visible;
             width: 100%;
             border-radius: 5px;
-            height: 16rem;
+            height: 20rem;
         }
     
         .call-me-container h2 {
             margin-top: 1rem;
-        }
-    
-        .call-me-form {
-    
+            font-size: 1.2rem;
         }
 
         .call-me-image {
-            background-image: url(../assets/images/index-call-me-image.jpg);
+            background-image: url(../assets/images/index-call-me-image.webp);
             width: 60%;
-            background-size: cover;
-            background-position: 50% 70%;
+            background-size: 120%;
+            background-position: 50% 100%;
             position: relative;
             height: 100%;
         }
@@ -1564,8 +1650,12 @@ section.contact-location {
             background-image: var(--cta-gradient);
             opacity: 60%;
         }
+
+        .call-me-form-btn {
+            font-size: 1.2rem;
+            width: fit-content;
+        }
     
- 
     
         /* TESTIMONIALS CAROUSEL */
 
@@ -1650,8 +1740,12 @@ section.contact-location {
     .references-cta-btn {
         width: auto;
         align-self: center;
-        font-size: 1.3rem;
     }
+
+    .references-cta-btn:hover {
+        font-size: 1.2rem;
+    }
+
     .reference-btn-mobile {
         display: none;
     }
@@ -1661,6 +1755,7 @@ section.contact-location {
 
     
     /* -------------------- INSPIRATION STYLING -------------------- */
+
 
 .projects-carousel {
     z-index: 1;
@@ -1696,13 +1791,16 @@ section.contact-location {
 }
 
 .projects-mockup {
-    margin: 0 -30% 0 0;
-    height: 20rem;
+    margin: 0 -50% 0 0;
+    width: 50%;
+    height: auto;
 }
 
 .projects-desc {
     display: flex;
     flex-direction: column;
+    height: 20rem;
+    max-width: 60%;
 }
 
 .projects-heading {
@@ -1714,8 +1812,8 @@ section.contact-location {
 .projects-link {
     font-family: Contrail-one;
     color: var(--primary-color);
-    margin-top: 1rem;
     align-self: flex-start;
+    bottom: 0;
 }
 
 .portfolio-gallery {
@@ -1726,7 +1824,7 @@ section.contact-location {
 
 .portfolio-gallery-cell {
     width: 30%;
-    height: 27rem;
+    height: 36rem;
     margin-right: 10px;
     background-color: var(--white-color) !important;
     counter-increment: gallery-cell;
@@ -1741,7 +1839,8 @@ section.contact-location {
 }
 
 .portfolio-gallery-image {
-    width: 90%;
+    width: 100%;
+    height: auto;
     margin-top: -1rem;
 }
 
@@ -1785,47 +1884,41 @@ section.contact-location {
     margin: 0 auto;
 }
 
+.about-employees-section {
+    padding-bottom: 0;
+    padding: 0 !important;
+}
+
 .employee-container {
-    height: 25rem;
+    margin: 12rem 0 5rem 0;
+    height: auto;
 }
 
 .employee-content-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "img ."
-    "img icons"
-    "name name"
-    "desc desc";
     padding: 1rem;
-}
+    height: 28rem;
 
-.employee-content-card h3 {
-    grid-area: name;
-}
-
-.employee-content-card p {
-    grid-area: desc;
 }
 
 .employee-content-card > img {
-    width: 90%;
+    width: 45%;
     align-self: flex-start;
-    grid-area: img;
+    margin-top: -25%;
 }
 
 .employee-contact-information {
-    width: 100%;
-    grid-area: icons;
-    margin-top: -50%;
+    position: absolute;
+    bottom: auto;
+    top: 1rem;
+    right: 1rem;
+    width: 50%;
 }
 
 
 /* -------------------- CONTACT STYLING -------------------- */
 
 .contact-hero {
-    background-image: url(../assets/images/contact/contact-hero.png);
+    background-image: url(../assets/images/contact/contact-hero.webp);
 }
 
 .contact-hero > .hero-heading {
@@ -1847,6 +1940,14 @@ section.contact-location {
     column-gap: 1rem;
     justify-content: space-between;
     padding-bottom: 5rem;
+}
+
+.contact-form {
+    width: 35rem;
+}
+
+.contact-form-btn {
+    width: 10rem;
 }
 
 .contact-info {
@@ -1917,12 +2018,12 @@ section.contact-location {
 /* -------------------- PRODUCTS STYLING -------------------- */
 
 .products-hero {
-    background-image: url(../assets/images/products/products-hero.png);
+    background-image: url(../assets/images/products/products-hero.webp);
 }
 
 .product-intro {
     padding: 0;
-    width: 70%;
+    width: 50%;
 }
 
 .product-section {
@@ -1940,7 +2041,7 @@ section.contact-location {
 }
 
 .product-image {
-    background-image: url(../assets/images/products/products-hero.png);
+    background-image: url(../assets/images/products/products-hero.webp);
     margin-top: 2rem;
     width: 45%;
     height: 22rem;
@@ -1955,6 +2056,60 @@ section.contact-location {
     padding: 0;
     width: 45%;
 }
+/* ------------------------- GET OFFER SECTION ------------------------ */
+
+.get-offer-section {
+    height: 30rem;
+    background-position-y: -400px;
+}
+
+/* -------------------------- PRIVACY ------------------------------- */
+
+.privacy-container {
+    max-width: 50vw;
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow) !important;
+    background-color: var(--white-color);
+}
+
+.privacy-container > h1 {
+    margin-bottom: 2rem;
+}
+
+}
 
 
+/* -------------------------- SPECIFIC SVG STYLING ----------------------------*/
+
+.b {
+    stroke: #fff;
+    stroke-width: 9px;
+}
+
+.b,
+.c {
+    stroke-miterlimit: 10;
+}
+
+.b,
+.c,
+.d {
+    fill: none;
+}
+
+.c {
+    stroke: rgb(233, 86, 12);
+    stroke-linecap: round;
+    stroke-width: 4px;
+}
+
+.e {
+    fill: rgb(233, 86, 12);
+}
+
+.f {
+    fill: #1d1d1b;
 }
