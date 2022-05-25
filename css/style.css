@@ -403,6 +403,15 @@ footer {
     flex-direction: column;
 }
 
+.footer-grid-cookies {
+    background-color: transparent !important;
+    font-weight: 600 !important;
+    display: inline;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
 .footer-grid-some {
     grid-area: some;
 }
@@ -438,6 +447,51 @@ footer {
 .privacy-container {
     margin-top: 5rem;
 }
+
+/* COOKIE BANNER */
+
+.cookie-banner {
+    background-color: var(--white-color);
+    position: fixed;
+    width: calc(100% - 2rem);
+    height: fit-content;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    display: none;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow)
+}
+
+.cookie-banner h3 {
+    margin: 0;
+}
+.cookie-banner p {
+    margin: 1rem 0;
+}
+
+.cookie-banner > p > a {
+    color: var(--primary-color) !important;
+    padding-top: 1rem !important;
+}
+
+.glowCookies__show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: scale(1) !important;
+    display: block;
+}
+
+.cookie-btn-container {
+    display: flex;
+}
+
+.cookie-btn {
+    font-size: 0.8rem;
+    width: fit-content;
+}
+
 
 /* -------------------- INDEX STYLING -------------------- */
 
@@ -1094,6 +1148,55 @@ footer {
         align-self: unset;
     }
     
+    /* Cookie banner */
+
+/* COOKIE BANNER */
+
+.cookie-banner {
+    background-color: var(--white-color);
+    position: fixed;
+    width: 50%;
+    height: fit-content;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1.5rem;
+    display: none;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow)
+}
+
+.cookie-banner h3 {
+    margin: 0;
+}
+.cookie-banner p {
+    margin: 1rem 0;
+}
+
+.cookie-banner > p > a {
+    color: var(--primary-color) !important;
+}
+
+.glowCookies__show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: scale(1) !important;
+    display: block;
+}
+
+.cookie-btn-container {
+    display: flex;
+}
+
+.cookie-btn {
+    font-size: 0.8rem;
+    width: fit-content;
+}
+
+.footer-grid-cookies {
+    font-weight: normal !important;
+}
+
     /*------------------- HERO ---------------------------*/
 
     .desktop-wrapper {
@@ -1192,7 +1295,7 @@ footer {
 }
 
 .gallery-cell {
-    width: 30%;
+    width: 45%;
     height: 17rem;
     margin-right: 10px;
     background-color: var(--white-color) !important;
@@ -1579,6 +1682,12 @@ section.contact-location {
         max-width: 1400px;
         width: 100%;
         margin: 0 auto;
+    }
+
+    /* Cookie banner */
+
+    .cookie-banner {
+        width: 25rem;
     }
 
         /* -------------------- INDEX STYLING -------------------- */

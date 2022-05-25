@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -8,22 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/flickity.css">
-    <link fetchpriority="high" rel="stylesheet" href="./css/style.css">
+<!--     <link fetchpriority="high" rel="stylesheet" href="./css/glowCookies.css">
+ -->    <link fetchpriority="high" rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/newsletter-popup.css">
     <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-icon">
     <title>Rise & Design | Webløsninger til Køges erhvervsliv</title>
     <meta name="keywords" content="web design keyword keyword keyword keyword">
     <meta name="description" content="128 tegns beskrivelse">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNNWZ1RSZS"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-QNNWZ1RSZS');
-    </script>
 </head>
 
 <body>
@@ -127,7 +119,6 @@
         </div>
 
     </header>
-
     <section fetchpriority="high" class="hero-section">
         <div class="desktop-wrapper">
             <h1 class="hero-heading">Skal du have en <br> hjemmeside som <br> skaber resultater?</h1>
@@ -314,7 +305,7 @@
                 <div class="footer-grid-container">
                     <a href="./kontakt" class="main-text footer-grid-contact">Kontakt</a>
                     <div class="footer-grid-legal">
-                        <a href="./privatliv" class="main-text footer-grid-cookies">Cookies</a>
+                        <button id="prebannerBtn" class="main-text footer-grid-cookies">Cookies</button>
                         <a href="./privatliv" class="main-text footer-grid-privacy">Privatlivspolitik</a>
                     </div>
                     <div class="footer-practical-info footer-grid-practical">
@@ -330,10 +321,20 @@
             </div>
         </div>
     </footer>
+    <script src="./js/glowCookies.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/newsletter-popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.7/src/glowCookies.min.js"></script>
+    <script>
+        glowCookies.start('da', { 
+            style: 2,
+            analytics: 'G-QNNWZ1RSZS', 
+            policyLink: 'https://riseanddesign.dk/privatliv'
+        });
+    </script>
+
 </body>
 
 </html>
