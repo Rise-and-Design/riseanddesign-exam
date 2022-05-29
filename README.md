@@ -1,3 +1,3 @@
 # riseanddesign-exam
 
-This is the repository for Rise & Design Website.
+Dette repository indeholder hjemmesiden til Rise & Design, udviklet i forbindelse med afsluttende eksamensprojekt på multimediedesignuddannelsen på Zealand Køge.

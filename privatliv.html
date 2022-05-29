@@ -55,8 +55,7 @@
                         </a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link navigation-link-4"
-                            href="./inspiration-til-hjemmeside-design">
+                        <a class="navigation-link navigation-link-4" href="./inspiration-til-hjemmeside-design">
                             Bliv inspireret
                             <img class="navigation-link-arrow" src="assets/icons/menu-arrow.svg" alt="" loading="lazy">
                         </a>
@@ -72,6 +71,7 @@
             </nav>
         </div>
     </header>
+    <!-- Alex og Oliver-->
     <section class="privacy-container">
         <h1 class="primary-heading">Cookie- og privatlivspolitik hos Rise and Design I/S</h1>
         <h2 class="sub-heading">Introduktion</h2>
@@ -182,24 +182,26 @@
             </div>
             <div class="footer-content-container">
                 <div class="footer-newsletter-container">
-                    <h6 class="main-text">Nyhedsbrev</h6>
+                    <p class="main-text footer-newsletter-heading">Nyhedsbrev</p>
                     <form action="" class="footer-newsletter-form">
                         <input type="text" class="footer-newsletter-input" placeholder="Navn">
                         <input type="text" class="footer-newsletter-input" placeholder="Email">
-                        <a href="" class="primary-cta-btn footer-newsletter-btn">Skriv mig op</a> <!-- Tilknyt opskrivning til nyhedsbrev - funktion -->
+                        <button class="primary-cta-btn footer-newsletter-btn">Skriv mig op</button>
+                        <!-- Tilknyt opskrivning til nyhedsbrev - funktion -->
                     </form>
                 </div>
                 <div class="footer-grid-container">
                     <a href="./kontakt" class="main-text footer-grid-contact">Kontakt</a>
                     <div class="footer-grid-legal">
-                        <a href="./privatliv" class="main-text footer-grid-cookies">Cookies</a>
+                        <button id="prebannerBtn" class="main-text footer-grid-cookies">Cookies</button>
                         <a href="./privatliv" class="main-text footer-grid-privacy">Privatlivspolitik</a>
                     </div>
                     <div class="footer-practical-info footer-grid-practical">
                         <p class="main-text">CVR: 42 16 68 39</p>
                         <p class="main-text">Nørregade 24D 1. th. <br>4600 Køge</p>
                     </div>
-                    <a target="_blank" href="https://www.linkedin.com/company/rise-and-design/?viewAsMember=true" class="main-text footer-grid-some">LinkedIn</a>
+                    <a target="_blank" href="https://www.linkedin.com/company/rise-and-design/?viewAsMember=true"
+                        class="main-text footer-grid-some">LinkedIn</a>
                 </div>
             </div>
             <div class="footer-logo-container">
@@ -207,6 +209,16 @@
             </div>
         </div>
     </footer>
+    <script src="./js/glowCookies.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        glowCookies.start('da', {
+            style: 2,
+            analytics: 'G-QNNWZ1RSZS',
+            policyLink: 'https://riseanddesign.dk/privatliv'
+        });
+    </script>
 </body>
 
 </html>

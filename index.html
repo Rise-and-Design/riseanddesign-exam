@@ -20,32 +20,40 @@
           !&. !P?   !7    .?B :B7    .7~  ^?.   ^777.  ?B     .7B7 .BJ.   .!!    .?#. ?~ JG^    ^GG  G?     B^          
           ~G.  .Y5: ~! :YJ?Y?  :JJ???YJ:  .!~^^~~^:!~. !BJJJYYYJ:   .JY?7?YY^ .YJ?YJ  7^  ~JJJ??75P  57     P^          
                  .       ::.      ::.       ...         .....          .::.     .:.      ^Y!::::!G~                     
-                                                                                          :7?77?!.                      
+                                                                                          :7?77?!.              
+    Ovenstående ^ er en sej kodetegning.        
 -->
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="cache-control" content="public" max-age=604800>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <!-- Diverse stylesheets der benyttes til forskellige sektioner -->
     <link rel="stylesheet" href="./css/flickity.css">
-    <!--     <link fetchpriority="high" rel="stylesheet" href="./css/glowCookies.css">
- -->
     <link fetchpriority="high" rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/newsletter-popup.css">
     <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-icon">
+    <!-- Meta tags der taler til søgemaskinerne og bruges til SEO - Oliver -->
+    <!-- Title tags er det der vises øverst på sit søgeresultat på google, sant i dit faneblad når siden er åben -->
     <title>Rise & Design | Få en professionel ny hjemmeside</title>
-    <meta name="keywords" content="ny hjemmeside, hjemmeside design, seo optimering, professionel hjemmeside, seo venlig, rise & design,">
+    <!-- Meta Keywords fortæller google hvad siden omhandler, der er dog debat om hvorvidt disse gør en reel forskel -->
+    <meta name="keywords"
+        content="ny hjemmeside, hjemmeside design, seo optimering, professionel hjemmeside, seo venlig, rise & design,">
+    <!-- Meta description er den tekst som vises i google søgeresultater under hjemmesidens URL og TITLE tag  -->
     <meta name="description"
         content="Hos Rise & Design kan du få en seo venlig ny hjemmeside med et professionelt udtryk, vi fokuserer på god kommmunikation så dine ønsker og behov imødekommes">
 </head>
 
 <body>
-    <header>
+<!-- Header tag der indeholder navigation og logo  -->
+    <header>                 
         <div class="header-wrapper">
             <a class="logo-anchor" href="https://riseanddesign.dk">
+                <!-- SVG Som animeres på i CSS - Alex -->
                 <svg class="logo" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.96 207.43">
                     <title>Rise and Design logo</title>
                     <path class="f"
@@ -93,11 +101,14 @@
                     <line class="c logo-animated-line-third" x1="416.84" y1="125.74" x2="484.25" y2="117.26" />
                 </svg>
             </a>
+            <!-- Burger menu ikon, som er kodet til at åbne mobile og tablet navigation ved klik  - Alex-->
             <button class="burger-toggle">
                 <div class="burger-bar burger-bar-top burger-top-close"></div>
                 <div class="burger-bar burger-bar-middle burger-middle-close"></div>
                 <div class="burger-bar burger-bar-bottom burger-bottom-close"></div>
             </button>
+
+            <!-- Navigation der indeholder lokale links til diverse undersider  - Alex-->
             <nav class="navigation">
                 <img class="navigation-logo" src="./assets/icons/brand-logo.svg" alt="Rise & Design logo"
                     loading="lazy">
@@ -144,6 +155,7 @@
         </div>
 
     </header>
+    <!-- Hero section på forsiden, denne har fået en "high" fetch priority, som gør at indlæsning påbegyndes så snart man er på siden  - Alex-->
     <section fetchpriority="high" class="hero-section">
         <div class="desktop-wrapper">
             <h1 class="hero-heading">Skal du have en <br> ny hjemmeside <br>som skaber resultater?</h1>
@@ -153,6 +165,7 @@
             </div>
         </div>
     </section>
+    <!-- Nyhedsbrev popup på forsiden, denne har fået en "high" fetch priority, som gør at indlæsning påbegyndes så snart man er på siden  - Alex-->
     <div fetchpriority="high" id="newsletter-popup" class="newsletter-popup">
         <div class="newsletter-popup-container">
             <div class="newsletter-popup-content">
@@ -173,6 +186,10 @@
         </div>
         <div class="newsletter-popup-backdrop" data-popup-backdrop></div>
     </div>
+    <!-- Logo karrousel der viser tidligere kunders logo på siden.
+        Denne er bygget opfølgende codepen:
+        https://codepen.io/studiojvla/pen/qVbQqW
+        men er tilpasset til brug på vores side, med vores indhold - Oliver-->
     <div class="slider">
         <div class="slide-track">
             <div class="slide">
@@ -209,6 +226,7 @@
             </div>
         </div>
     </div>
+    <!-- Intro sektionen for forsiden - Alex-->
     <section class="intro-section">
         <h2 class="primary-heading">
             Digitale løsninger
@@ -230,6 +248,7 @@
         </p>
         <video class="intro-video" src="" poster="./assets/images/index-intro-video-thumbnail.png"></video>
     </section>
+    <!-- "Giv os et kald" container, som sender en mail ved indtastning af oplysninger - Oliver-->
     <div class="call-me-wrapper section-color--alternate">
         <section class="call-me-section">
             <div class="call-me-container reveal">
@@ -264,6 +283,9 @@
             </p>
         </section>
     </div>
+    <!-- Denne sektion indeholder udtalelser fra tidligere kunder
+    Strukturen for denne er lavet ved hjælp af scriptet "Flickity"
+    Der kan læses yderligere om dette i rapporten under "CSS" - Oliver-->
     <section class="testemonials-section">
         <h4 class="primary-heading">Dét siger vores kunder</h4>
         <div class="gallery js-flickity testimonial" data-flickity-options='{ "wrapAround": true }'>
@@ -282,14 +304,16 @@
                 </div>
             </div>
         </div>
+        <!-- Link til Google og Trustpilot anmeldelser  -->
         <p class="main-text">Se vores andre anmeldelser på <a class="color-primary" target="_blank"
                 href="https://www.google.com/search?q=rise+and+design+i%2Fs&rlz=1C1GCEA_enDK923DK923&sxsrf=ALiCzsZEH1CbQNMbUFd62_BI97YRdfSOYg%3A1653325851345&ei=G8CLYt_XFNCPxc8PvbiJoAY&ved=0ahUKEwif0cTgjvb3AhXQR_EDHT1cAmQQ4dUDCA4&uact=5&oq=rise+and+design+i%2Fs&gs_lcp=Cgdnd3Mtd2l6EAMyAggmOgQIIxAnOgQIABBDOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQrwE6EQguEIAEELEDEIMBEMcBEKMCOgsILhCABBCxAxDUAjoOCC4QgAQQsQMQxwEQrwE6DgguEIAEEMcBEK8BENQCOgUIABCxAzoICAAQgAQQsQM6CwgAEIAEELEDEIMBOgUIABCABDoICC4QgAQQsQM6BAguEEM6BwgAELEDEEM6BQguEIAEOggILhCABBDUAjoFCAAQywE6CAguENQCEMsBOgUILhDLAToGCAAQHhAWOggIABAeEBYQCkoECEEYAEoECEYYAFC3BViHJWDnJWgDcAF4AIAB0wGIAbkPkgEFOC45LjGYAQCgAQHAAQE&sclient=gws-wiz#lrd=0xf99bfa5c0a02641:0x1acbdf89fe4e89c0,3,,,">Google</a>
             eller
             <a class="color-primary" target="_blank"
                 href="https://dk.trustpilot.com/review/riseanddesign.dk">Trustpilot</a>
         </p>
-
+    
     </section>
+    <!-- Dette er vores cases sektion, som leder ind på inspirationssiden der viser tidligere projekter - Oliver-->
     <div class="reference-wrapper section-color--alternate">
         <section class="references-section">
             <div class="reference-section-desc">
@@ -304,21 +328,25 @@
                     <br> <br>
                     Her kan du se hvordan et hjemmeside design kan se ud.
                 </p>
-                <a href="./inspiration-til-hjemmeside-design" class="primary-cta-btn references-cta-btn reference-btn-desktop">Se andre
+                <a href="./inspiration-til-hjemmeside-design"
+                    class="primary-cta-btn references-cta-btn reference-btn-desktop">Se andre
                     projekter</a>
             </div>
             <img class="references-image reveal" src="./assets/images/references/references-chilis-grill.webp"
                 alt="Chilis grill, ny hjemmeside" loading="lazy" width="1280px">
-            <a href="./inspiration-til-hjemmeside-design" class="primary-cta-btn references-cta-btn reference-btn-mobile">Se andre
+            <a href="./inspiration-til-hjemmeside-design"
+                class="primary-cta-btn references-cta-btn reference-btn-mobile">Se andre
                 projekter</a>
         </section>
     </div>
+    <!-- Få et tilbud banner  - Alex-->
     <section class="get-offer-section">
         <h6 class="hero-heading">
             Skal du også have en ny hjemmeside <br> som skaber resultater?
         </h6>
         <a href="./kontakt" class="primary-cta-btn references-cta-btn">Få et tilbud</a>
     </section>
+    <!-- Footer, der indeholder diverse oplysninger  - Alex-->
     <footer>
         <div class="footer-wrapper">
             <div class="footer-contact-info-container">
@@ -355,11 +383,13 @@
             </div>
         </div>
     </footer>
+    <!-- Her er de scripts der bruges på tværs af siden -->
     <script src="./js/glowCookies.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/newsletter-popup.js"></script>
+    <!-- Nedenstående script omhandler cookies management - Oliver-->
     <script>
         glowCookies.start('da', {
             style: 2,
