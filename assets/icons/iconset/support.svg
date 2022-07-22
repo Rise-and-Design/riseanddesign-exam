@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="136" viewBox="0 0 136 136">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.519" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ed6d1d"/>
+      <stop offset="1" stop-color="#ffa52e"/>
+    </linearGradient>
+  </defs>
+  <g id="support" transform="translate(-9697 22390)">
+    <g id="Group_787" data-name="Group 787" transform="translate(32293 -31287)">
+      <g id="Group_154" data-name="Group 154" transform="translate(-163)">
+        <g id="Group_150" data-name="Group 150" transform="translate(-326)">
+          <g id="Group_106" data-name="Group 106" transform="translate(-368 2)">
+            <circle id="Ellipse_49" data-name="Ellipse 49" cx="68" cy="68" r="68" transform="translate(-21739 8895)" fill="url(#linear-gradient)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_788" data-name="Group 788" transform="translate(9715.784 -22362.605)">
+      <path id="Subtraction_12" data-name="Subtraction 12" d="M4.162,38.585H0A38.334,38.334,0,0,1,11.378,11.3a38.992,38.992,0,0,1,54.941,0A38.334,38.334,0,0,1,77.7,38.582H73.536A34.1,34.1,0,0,0,63.365,14.235a34.721,34.721,0,0,0-59.2,24.348Z" transform="translate(10.22)" fill="#fff"/>
+      <path id="Rectangle_196" data-name="Rectangle 196" d="M0,0H8.742a5,5,0,0,1,5,5V17.2a5,5,0,0,1-5,5H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(83.689 30.656)" fill="#fff"/>
+      <path id="Rectangle_197" data-name="Rectangle 197" d="M5,0h8.742a0,0,0,0,1,0,0V22.2a0,0,0,0,1,0,0H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(1 30.656)" fill="#fff"/>
+      <path id="Rectangle_198" data-name="Rectangle 198" d="M5,0H8.457a0,0,0,0,1,0,0V13.742a0,0,0,0,1,0,0H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(40.348 87.212) rotate(-90)" fill="#fff"/>
+      <path id="Subtraction_14" data-name="Subtraction 14" d="M4.161,38.839H0A38.807,38.807,0,0,1,38.839,0c.315,0,.634,0,.95.011l-.1,4.16c-.266-.006-.551-.01-.848-.01A34.717,34.717,0,0,0,4.161,38.839Z" transform="translate(88.466 83.14) rotate(180)" fill="#fff"/>
+      <path id="Line_58" data-name="Line 58" d="M12.063,14.145a3.454,3.454,0,0,1-2.282-.858l-11.1-9.71a3.468,3.468,0,0,1,4.567-5.22l11.1,9.71a3.468,3.468,0,0,1-2.285,6.078Z" transform="translate(33.272 45.412)" fill="#fff"/>
+      <path id="Line_59" data-name="Line 59" d="M.965,29.4a3.468,3.468,0,0,1-2.735-5.6L17.65-1.161A3.468,3.468,0,0,1,23.125,3.1L3.705,28.065A3.462,3.462,0,0,1,.965,29.4Z" transform="translate(44.369 30.154)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="136" viewBox="0 0 136 136">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.519" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ed6d1d"/>
+      <stop offset="1" stop-color="#ffa52e"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_776" data-name="Group 776" transform="translate(22596 -8897)">
+    <g id="Group_154" data-name="Group 154" transform="translate(-163)">
+      <g id="Group_150" data-name="Group 150" transform="translate(-326)">
+        <g id="Group_106" data-name="Group 106" transform="translate(-368 2)">
+          <circle id="Ellipse_49" data-name="Ellipse 49" cx="68" cy="68" r="68" transform="translate(-21739 8895)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_777" data-name="Group 777" transform="translate(-12940.516 -13301.616) rotate(-45)">
+      <line id="Line_211" data-name="Line 211" x2="48" transform="translate(-22563.5 8961.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
+      <line id="Line_212" data-name="Line 212" y1="12" transform="translate(-22563.5 8961.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
+      <line id="Line_213" data-name="Line 213" y1="12" transform="translate(-22548.5 8961.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
+      <rect id="Rectangle_429" data-name="Rectangle 429" width="32" height="35" rx="5" transform="translate(-22517 8948)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

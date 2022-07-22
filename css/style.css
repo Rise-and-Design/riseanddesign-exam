@@ -101,6 +101,11 @@ body {
     font-weight: bold;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 section:not(.hero-section):not(.get-offer-section):not(.testemonials-section):not(.projects-carousel):not(.location-container):not(.product-section) {
     padding: 1rem 1.5rem 3rem 1.5rem;
 }
@@ -128,6 +133,11 @@ section:not(.hero-section):not(.get-offer-section):not(.testemonials-section):no
 .secondary-cta-btn {
     color: var(--primary-color);
     background: var(--white-color);
+}
+
+.white-cta-btn {
+    background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .sub-hero-section {
@@ -527,6 +537,9 @@ footer {
 .hero-cta-container {
     margin-top: 1rem;
     height: 3rem;
+    width: 33%;
+    display: flex;
+    align-items: center;
 }
 
 .hero-cta-container > a {
@@ -610,6 +623,133 @@ footer {
     width: 6rem;
     margin-top: 1rem;
     font-size: .8em;
+}
+
+/* -------------------- PRODUCT CATEGORY SECTION -------------------- */
+
+.product-categories-section {
+    width: 100vw;
+    background: var(--cta-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'title'
+    'web' 
+    'seo' 
+    'hosting' 
+    'drone'
+    'btn'
+    ;
+}
+
+.product-categories-section h4 {
+    grid-area: title;
+}
+
+.categories-container:first-of-type {
+    grid-area: web;
+}
+
+.categories-container:nth-of-type(2) {
+    grid-area: seo;
+}
+
+.categories-container:nth-of-type(3) {
+    grid-area: hosting;
+}
+
+.categories-container:nth-of-type(4) {
+    grid-area: drone;
+}
+
+.categories-container {
+    margin-top: 3rem;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-categories-section h4 {
+    color: var(--white-color);
+}
+
+.card-contains:hover {
+    transform: rotateY(.5turn);
+}
+
+.card-contains {
+    position: relative;
+    height: 15rem;
+    width: 80%;
+    transform-style: preserve-3d;
+    transition: all .5s ease;
+    margin: .5rem;
+}
+
+.category {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    height: 100%;
+    width: 100%;
+    margin: .25rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+
+.category-face {
+    transform-style: preserve-3d;
+}
+
+.category-backside {
+    transform: rotateY(.5turn);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.category-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.category-icon img {
+    width: 100%;
+}
+
+.category p {
+    color: var(--primary-color);
+    margin-top: 1rem !important;
+}
+
+.category-backside p {
+    font-size: 1em;
+    padding: .5rem;
+    text-align: left;
+    color: var(--black-color);
+}
+
+.product-categories-section a {
+    margin-top: 2.5rem;
+    grid-area: btn;
 }
 
 /* -------------------- TESTEMONIALS SECTION -------------------- */
@@ -1112,8 +1252,16 @@ footer {
         ;
     }
 
-    .footer-grid-container a {
+    .footer-grid-container a,
+    .footer-grid-container button {
         font-weight: normal;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .footer-grid-container a:hover,
+    .footer-grid-container button:hover {
+        color: var(--primary-color);
     }
 
     .footer-grid-legal, .footer-grid-practical {
@@ -1283,6 +1431,20 @@ footer {
 
     .call-me-section {
         padding: 4rem 1.5rem !important;
+    }
+
+    /* PRODUCT CATEGORIES */
+
+    .product-categories-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'title title'
+        'web seo' 
+        'hosting drone'
+        'btn btn'
+        ;
     }
 
     /* TESTIMONIALS CAROUSEL */
@@ -1632,7 +1794,8 @@ section.contact-location {
         font-size: 3em;
     }
 
-    .hero-cta-container .primary-cta-btn:hover,.hero-cta-container .secondary-cta-btn:hover  {
+    .hero-cta-container .primary-cta-btn:hover,
+    .hero-cta-container .secondary-cta-btn:hover  {
         transform: scale(.9) !important;
         transition: all .25s ease;
         font-size: 1.2rem;
@@ -1783,8 +1946,20 @@ section.contact-location {
             width: fit-content;
         }
     
+    /* PRODUCT CATEGORIES */
+
+    .product-categories-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'title title title title'
+        'web seo hosting drone'
+        'btn btn btn btn'
+        ;
+    }
     
-        /* TESTIMONIALS CAROUSEL */
+    /* TESTIMONIALS CAROUSEL */
 
     .testemonials-section {
         max-width: 1400px;
